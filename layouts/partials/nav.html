@@ -28,7 +28,7 @@
           <!-- ex. Sensu Core -->
           {{ $url := replace $.Params.product " " "-" }}
           {{ $url := lower $url }}
-          <li><a class="menu-title" href="/{{ $url }}/{{ $.Params.version }}">{{ $niceName }}</a><ul class="toc-menu-container">
+          <li><a class="menu-title" style="color:#7B4496;" href="/{{ $url }}/{{ $.Params.version }}">{{ $niceName }}</a><ul class="toc-menu-container">
 
           <!-- Loop through the menus pages -->
           {{ range $y, $x := $v }}
